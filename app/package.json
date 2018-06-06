@@ -1,0 +1,25 @@
+{
+  "name": "webrtc_multiple_connections",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --host 0.0.0.0 --port 80 --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "Evgeni Radev",
+  "license": "",
+  "description": "A WebRTC app that allows multiple video connections between users.",
+  "dependencies": {
+    "ws": "^5.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "net": "^1.0.2",
+    "tls": "0.0.1",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  }
+}

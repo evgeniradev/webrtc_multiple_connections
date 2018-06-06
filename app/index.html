@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>WebRTC: Multiple Connections</title>
+    <link rel='stylesheet' href='css/style.css'>
+  </head>
+  <body>
+    <div id='loginZone'>
+       <h2>Log in:</h2>
+       <input type='email' id='loginNameInput' placeholder='Username'>
+       <button id='loginBtn'>Log in</button>
+    </div>
+    <div id='connectionsZone' class='hidden'>
+      <h3>You are logged in as <span id='validatedLoginName'></span></h3>
+      <div id='videoZone'>
+        <video id='localVideo' autoplay></video>
+        <div id='remoteVideoStreams'></div>
+      </div>
+      <div id='connectionControls'>
+        <input id='otherNameInput' placeholder='Username to call' />
+        <button id='connectBtn'>Connect</button>
+        <button id='disconnectBtn'>Disconnect</button>
+      </div>
+    </div>
+    <script src='js/dist/main.js'></script>
+  </body>
+</html>

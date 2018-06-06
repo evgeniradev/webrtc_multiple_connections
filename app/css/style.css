@@ -1,0 +1,16 @@
+.hidden {
+  display: none
+}
+
+video {
+  max-width: 300px;
+  width: 100%;
+}
+
+#videoZone {
+  display: flex
+}
+
+#localVideo {
+  align-self: flex-start;
+}

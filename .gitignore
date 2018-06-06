@@ -1,0 +1,5 @@
+/app/node_modules/*
+/app/js/dist/*
+
+.DS_Store
+.DS_Store?

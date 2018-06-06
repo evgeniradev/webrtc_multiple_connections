@@ -1,0 +1,20 @@
+version: '3'
+services:
+  webrtc_app:
+    build: .
+    volumes:
+      - ./app:/home/node/app
+    ports:
+      - '80:80'
+    command: static -a 0.0.0.0 -p 80
+    depends_on:
+      - webrtc_ws
+  webrtc_ws:
+    build:
+      context: .
+      dockerfile: ./Dockerfile-ws
+    volumes:
+      - ./app:/home/node/app
+    ports:
+      - '9090:9090'
+    command: node server 0.0.0.0
