@@ -10,7 +10,7 @@
   "license": "",
   "description": "A WebRTC app that allows multiple video connections between users.",
   "dependencies": {
-    "ws": "^5.2.0"
+    "ws": "^7.4.5"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
